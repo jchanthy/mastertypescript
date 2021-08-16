@@ -1,10 +1,6 @@
-var myBoolean : boolean = true;
-var myNumber : number = 1234;
-var myStringArray : string[] = [`first`, `second`, `third`];
-
-myBoolean = myNumber === 456;
-myStringArray = [myNumber.toString(), `5678`];
-myNumber = myStringArray.length;
-console.log(`myBoolean = ${myBoolean}`);
-console.log(`myStringArray = ${myStringArray}`);
-console.log(`myNumber = ${myNumber}`);
+var index: number = 0;
+if (index == 0) {
+    var index: number = 2;
+    console.log(`index = ${index}`);
+}
+console.log(`index = ${index}`);
