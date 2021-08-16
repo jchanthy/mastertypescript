@@ -1,6 +1,19 @@
-var index: number = 0;
-if (index == 0) {
-    var index: number = 2;
-    console.log(`index = ${index}`);
+enum DoorState{
+    Open,
+    Closed
 }
-console.log(`index = ${index}`);
+function checkDoorState(state:DoorState){
+    console.log(`enum value is ${state}`);
+    switch (state) {
+        case DoorState.Open:
+            console.log(`Door is Open`);
+            break;
+        case DoorState.Closed:
+            console.log('Door is Closed');
+            break;
+
+    }
+}
+
+checkDoorState(DoorState.Open);
+checkDoorState(DoorState.Closed);
