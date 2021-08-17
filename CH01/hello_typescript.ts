@@ -2,7 +2,7 @@ enum DoorState{
     Open,
     Closed
 }
-function checkDoorState(state:DoorState){
+function checkDoorState(state: DoorState){
     console.log(`enum value is ${state}`);
     switch (state) {
         case DoorState.Open:
